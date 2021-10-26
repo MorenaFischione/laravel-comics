@@ -1,6 +1,6 @@
 <header>
     <figure>
-        <img src="{{ asset('images/dc-logo.png')}}" alt="">
+        <img src="{{ asset('images/dc-logo.png')}}" alt="logo comics dc">
     </figure>
     <ul>
         @foreach ($links as $link)

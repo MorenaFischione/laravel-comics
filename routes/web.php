@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    $cards = config('comics_list');
+    return view('comics', ['cards' => $cards]);
+})->name('comics');
+
 Route::get('/comics', function () {
     $cards = config('comics_list');
     return view('comics', ['cards' => $cards]);
@@ -53,3 +58,14 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
+
+Route::get('/comic/{id}', function ($id) {
+    $comics = config('comics_list');
+
+    if (is_numeric($id) && ($id < count($comics) && $id >= 0)) {
+        $comic = $comics[$id];
+        return view('comic', ['comic' => $comic]);
+    } else {
+        abort('404');
+    }
+})->name('comic');
