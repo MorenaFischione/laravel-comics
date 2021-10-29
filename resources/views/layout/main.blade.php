@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comics | @yield('title')</title>
     <link rel="stylesheet" href=" {{ asset('css/app.css') }}">
+    @yield('cdn-import')
 </head>
 <body>
     @include('partials.header', ['links' => config('header_main_menu')])

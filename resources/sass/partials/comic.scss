@@ -1,5 +1,42 @@
 #card-detail {
     display: flex;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
+
+    .wrapper-buy{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(146, 214, 77);
+        margin:20px;
+
+        .price{
+            display: flex;
+            justify-content: space-between;
+            flex-grow: 1;
+            border: 1px solid black;
+            align-items: center;
+
+            p{
+                padding: 20px;
+                color: white;
+            }
+            
+        }
+
+        .check {
+            border: 1px solid black;
+
+            p{
+
+                padding: 20px;
+                color: white;
+            }
+        }   
+
+        .img {
+            align-self: center;
+        }
+
+        
+    }
 }

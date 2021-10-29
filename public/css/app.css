@@ -93,11 +93,41 @@ main .container-cards .card h5 {
   text-transform: uppercase;
   padding-top: 10px;
 }
+main .container-cards .card a {
+  text-decoration: none;
+}
 
 #card-detail {
   display: flex;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
+}
+#card-detail .wrapper-buy {
+  display: flex;
+  justify-content: space-between;
+  background-color: #92d64d;
+  margin: 20px;
+}
+#card-detail .wrapper-buy .price {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  border: 1px solid black;
+  align-items: center;
+}
+#card-detail .wrapper-buy .price p {
+  padding: 20px;
+  color: white;
+}
+#card-detail .wrapper-buy .check {
+  border: 1px solid black;
+}
+#card-detail .wrapper-buy .check p {
+  padding: 20px;
+  color: white;
+}
+#card-detail .wrapper-buy .img {
+  align-self: center;
 }
 
 body {
