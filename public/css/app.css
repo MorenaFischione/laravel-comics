@@ -105,7 +105,7 @@ main .container-cards .card a {
 #card-detail .wrapper-buy {
   display: flex;
   justify-content: space-between;
-  background-color: #92d64d;
+  background-color: #45ad5f;
   margin: 20px;
 }
 #card-detail .wrapper-buy .price {
@@ -128,6 +128,10 @@ main .container-cards .card a {
 }
 #card-detail .img {
   align-self: center;
+}
+
+.wrapper-detail {
+  background-color: #e7e4e4;
 }
 
 body {

@@ -1,3 +1,5 @@
+
+
 #card-detail {
     display: flex;
     width: 80%;
@@ -6,7 +8,7 @@
     .wrapper-buy{
         display: flex;
         justify-content: space-between;
-        background-color: rgb(146, 214, 77);
+        background-color: rgb(69, 173, 95);
         margin:20px;
 
         .price{
@@ -36,4 +38,8 @@
     .img {
         align-self: center;
     }
+}
+
+.wrapper-detail {
+    background-color: rgb(231, 228, 228);
 }

@@ -4,6 +4,7 @@
 
 @section('contenuto')
     <div id="card-detail">
+        
         <div class="description">
             <h1>{{ $comic['title'] }}</h1>
             <div class="wrapper-buy">
@@ -20,8 +21,21 @@
         <div class="img">
             <img src="{{asset('images/adv.jpg')}}" alt="immagine di superman che vola">
         </div>
-        
-        
+    </div>
+    <div class="wrapper-detail">
+        <div class="talent">
+            <h3>Talent</h3>
+           
+            <h5>Art by:</h5>
+            @foreach ($comic['artists'] as $artist )
+                <p> {{ $artist }}, </p>
+            @endforeach
+
+            <h5>Writen by:</h5>
+            @foreach ($comic['writers'] as $writer)
+            <p> {{ $writer }}, </p>
+            @endforeach
+        </div>
     </div>
 @endsection
 
