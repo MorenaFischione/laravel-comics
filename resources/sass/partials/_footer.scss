@@ -1,0 +1,49 @@
+.container-footer {
+    background-image: url("../../../public/images/footer-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    .nav-footer {
+        display: flex;
+        justify-content: start;
+        ul{
+        list-style-type: none;
+        }
+        li a {
+            text-decoration: none;
+            color: lightslategrey;
+            
+            line-height: 2rem;
+            
+        }
+        .menu-left,
+        .menu-center,
+        .menu-right {
+            padding: 20px 20px 20px 0px;
+        }
+        h3 {
+            margin-top:15px;
+            margin-bottom: 5px;
+            
+        }
+        .logo-bg {
+            position: absolute;
+            left: 800px;
+        }
+    }
+    
+}
+.sign-up {
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+}

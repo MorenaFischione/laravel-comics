@@ -3,8 +3,13 @@
 @section('title', $comic['title'])
 
 @section('contenuto')
+
+    {{-- Jambotron con immagine --}}
+    <div class="jambotron">
+        <img class="img-jb" src="{{asset('images/jumbotron.jpg')}}" alt="immagine jambo">
+    </div>
+    {{-- Section con dettaglio della singola card --}}
     <div id="card-detail">
-        
         <div class="description">
             <h1>{{ $comic['title'] }}</h1>
             <div class="wrapper-buy">
@@ -22,21 +27,50 @@
             <img src="{{asset('images/adv.jpg')}}" alt="immagine di superman che vola">
         </div>
     </div>
-    <div class="wrapper-detail">
-        <div class="talent">
-            <h3>Talent</h3>
-           
-            <h5>Art by:</h5>
-            @foreach ($comic['artists'] as $artist )
-                <p> {{ $artist }}, </p>
-            @endforeach
+    {{-- section con specifiche della card selezionata --}}
+    <section class="detail">
+        <div class="wrapper-detail">
+            <div class="talent">
+                <h3>Talent</h3>
+                <div class="art-by">
+                    <div class="title-talent">
+                        <h5>Art by:</h5>
+                    </div>
+                    <div class="artists">
+                        @foreach ($comic['artists'] as $artist )
+                            <a href="#"><span> {{ $artist }}, </span></a>
+                        @endforeach
+                    </div>
+                </div>
 
-            <h5>Writen by:</h5>
-            @foreach ($comic['writers'] as $writer)
-            <p> {{ $writer }}, </p>
-            @endforeach
+                <div class="writen">
+                    <div class="title-talent">
+                        <h5>Writen by:</h5>
+                    </div>
+                    <div class="writers">
+                        @foreach ($comic['writers'] as $writer)
+                        <a href="#"><span> {{ $writer }}, </span></a>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+            <div class="specs">
+                <h3>Spects</h3>
+                <div class="series">
+                    <h5>Writen by:</h5>
+                    <p> {{$comic['series']}} </p>
+                </div>
+                <div class="us-price">
+                    <h5>US Price:</h5>
+                    <p> {{$comic['price']}} </p>
+                </div>
+                <div class="date">
+                    <h5>On Sale Date:</h5>
+                    <p> {{$comic['sale_date']}} </p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 @endsection
 
 @section('cdn-import')

@@ -1,3 +1,50 @@
+.container-footer {
+  background-image: url("../../../public/images/footer-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+footer .nav-footer {
+  display: flex;
+  justify-content: start;
+}
+footer .nav-footer ul {
+  list-style-type: none;
+}
+footer .nav-footer li a {
+  text-decoration: none;
+  color: lightslategrey;
+  line-height: 2rem;
+}
+footer .nav-footer .menu-left,
+footer .nav-footer .menu-center,
+footer .nav-footer .menu-right {
+  padding: 20px 20px 20px 0px;
+}
+footer .nav-footer h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+footer .nav-footer .logo-bg {
+  position: absolute;
+  left: 800px;
+}
+
+.sign-up {
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+}
+
 header {
   width: 70%;
   margin: 0 auto;
@@ -97,10 +144,30 @@ main .container-cards .card a {
   text-decoration: none;
 }
 
+.jambotron {
+  width: 100%;
+  height: 340px;
+  position: relative;
+  margin-bottom: 80px;
+}
+.jambotron img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: top;
+     object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #card-detail {
   display: flex;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
+  padding-bottom: 100px;
+}
+#card-detail h1 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
 }
 #card-detail .wrapper-buy {
   display: flex;
@@ -130,8 +197,65 @@ main .container-cards .card a {
   align-self: center;
 }
 
-.wrapper-detail {
+.detail {
   background-color: #e7e4e4;
+  border-bottom: 1px solid grey;
+}
+.detail .wrapper-detail {
+  background-color: #e7e4e4;
+  display: flex;
+  margin: 0 auto;
+  width: 60%;
+}
+.detail .wrapper-detail .talent {
+  width: 50%;
+  padding: 0 50px 0 0;
+}
+.detail .wrapper-detail .talent .art-by,
+.detail .wrapper-detail .talent .writen {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid grey;
+}
+.detail .wrapper-detail .talent .title-talent {
+  width: 40%;
+}
+.detail .wrapper-detail .talent .writers,
+.detail .wrapper-detail .talent .artists {
+  width: 60%;
+}
+.detail .wrapper-detail .talent .writers a,
+.detail .wrapper-detail .talent .artists a {
+  text-decoration: none;
+  color: #699eca;
+}
+.detail .wrapper-detail .talent span {
+  font-size: 0.9rem;
+}
+.detail .wrapper-detail .talent h3 {
+  padding: 30px 0;
+  border-bottom: 1px solid grey;
+}
+.detail .wrapper-detail .specs {
+  width: 50%;
+  padding: 0 50px 0 0;
+}
+.detail .wrapper-detail .specs h3 {
+  padding: 30px 0;
+  border-bottom: 1px solid grey;
+}
+.detail .wrapper-detail .specs .series,
+.detail .wrapper-detail .specs .us-price,
+.detail .wrapper-detail .specs .date {
+  display: flex;
+  border-bottom: 1px solid grey;
+  padding: 10px 0;
+}
+.detail .wrapper-detail .specs .series h5,
+.detail .wrapper-detail .specs .us-price h5,
+.detail .wrapper-detail .specs .date h5 {
+  width: 40%;
 }
 
 body {
